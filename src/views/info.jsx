@@ -11,8 +11,10 @@ class Info extends Component{
   render(){
     return(
       <div className="wrap">
-        <h3 className="title">Info Page</h3>
-        <button onClick={this.routeTo}>route to home page</button>
+        <div className="bgi-cover">
+          <h3 className="title">Info Page</h3>
+          <button onClick={this.routeTo}>route to home page</button>
+        </div>
       </div>
     )
   }

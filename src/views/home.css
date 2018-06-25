@@ -8,8 +8,11 @@
   position: relative;
 }
 .bgi-cover{
+  background-color: #fff;
   position: relative;
   z-index: 9;
+  overflow: hidden;
+  padding: 20px 24px;
 }
 .wavebox{
   width: 140%;
