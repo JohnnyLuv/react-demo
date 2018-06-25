@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import { Button, WhiteSpace } from 'antd-mobile'
 import './home.css'
 
 class Home extends Component{
@@ -21,8 +22,10 @@ class Home extends Component{
       <div className="wrap">
         <div className='bgi-cover'>
           <h3 className="title">Home Page</h3>
-          <button onClick={this.routeTo}>go info page</button>
-          <select value={this.state.select_val} onChange={this.handleChange}>
+          <Button type="ghost" size="small" onClick={this.routeTo}>route to info page</Button>
+          <WhiteSpace size="lg" />
+          <label>select </label>
+          <select className='select' value={this.state.select_val} onChange={this.handleChange}>
             <option value="1">apple</option>
             <option value="2">boy</option>
             <option value="3">cat</option>

@@ -14,6 +14,13 @@
   overflow: hidden;
   padding: 20px 24px;
 }
+.select{
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  border-radius: 7px;
+}
 .wavebox{
   width: 140%;
   padding-bottom: 140%;
