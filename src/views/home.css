@@ -1,0 +1,50 @@
+.wrap{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 56, 56, 0.8);
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+.bgi-cover{
+  position: relative;
+  z-index: 9;
+}
+.wavebox{
+  width: 140%;
+  padding-bottom: 140%;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wave{
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 40%;
+  position: absolute;
+}
+.one{
+  background-color: rgba(255,255,255,.5);
+  animation: wave 10s infinite linear;
+}
+.two{
+  background-color: rgba(255,255,255,.3);
+  animation: wave 15s infinite linear;
+}
+.three{
+  background-color: rgba(255,255,255,.3);
+  animation: wave 20s infinite linear;
+}
+.four{
+  background-color: rgba(255,255,255,1);
+  animation: wave 30s infinite linear;
+}
+@keyframes wave{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }
+}
